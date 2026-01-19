@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plan Your Trip | Kenya Safari Tours</title>
+  <style>
+    .hero {
+            background: url(safari\ cars.jpg) center/cover no-repeat;
+            height: 20vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            position: relative;
+            padding: 60px 20px;
+        }
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #f5f7f6;
+      color: #333;
+    }
+
+    /* Hero */
+    header {
+     background: url();
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+    }
+
+    header p {
+      margin-top: 15px;
+      font-size: 1.2rem;
+      max-width: 850px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* Layout */
+    .container {
+      max-width: 1100px;
+      margin: 70px auto;
+      padding: 0 20px;
+    }
+
+    .intro {
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .intro h2 {
+      font-size: 2.2rem;
+      color: #e38b4f;
+      margin-bottom: 15px;
+    }
+
+    .intro p {
+      font-size: 1.05rem;
+      color: #555;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    /* Planner Card */
+    .planner-card {
+      background: #fff;
+      padding: 45px;
+      border-radius: 18px;
+      box-shadow: 0 18px 45px rgba(0,0,0,0.12);
+      border-top: 6px solid #2f6f4e;
+    }
+
+    form {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+    }
+
+    label {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: #e38b4f;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      margin-bottom: 6px;
+      display: block;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 14px;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      font-size: 0.95rem;
+      background-color: #fafafa;
+      transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      outline: none;
+      border-color: #2f6f4e;
+      box-shadow: 0 0 0 3px rgba(47,111,78,0.15);
+      background-color: #fff;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 120px;
+      grid-column: 1 / -1;
+    }
+
+    .full {
+      grid-column: 1 / -1;
+    }
+
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-wrapper button {
+      width: 100%;
+      max-width: 420px;
+      background: linear-gradient(135deg, #e38b4f, #3f8f65);
+      color: #fff;
+      padding: 18px;
+      border: none;
+      border-radius: 12px;
+      font-size: 1.05rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .button-wrapper button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(47,111,78,0.35);
+    }
+
+    .note {
+      margin-top: 20px;
+      font-size: 0.9rem;
+      color: #666;
+      text-align: center;
+    }
+
+    /* Footer */
+    footer {
+      background: #1f1f1f;
+      color: #ccc;
+      text-align: center;
+      padding: 25px;
+      margin-top: 90px;
+      font-size: 0.9rem;
+    }
+
+    footer span {
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero -->
+   <section class="hero">
+  <header>
+    <h1>Plan Your Perfect Safari</h1>
+    <p>Tell us your travel dreams, preferences, and interests — our safari experts will design a personalized Kenyan adventure just for you.</p>
+  </header>
+  </section>
+
+  <!-- Content -->
+  <main class="container">
+    <section class="intro">
+      <h2>Let’s Design Your Journey</h2>
+      <p>No two safaris are the same. Whether you dream of witnessing the Great Migration, exploring iconic parks, or enjoying luxury lodges, we’ll tailor every detail to match your vision.</p>
+    </section>
+
+    <section class="planner-card">
+      <!-- FORMSPREE FORM -->
+      <form action="https://formspree.io/f/mreebwje" method="POST">
+        <!-- Redirect after submission -->
+        <input type="hidden" name="_next" value="thank-you.html">
+        <!-- Track which form was submitted -->
+        <input type="hidden" name="form_name" value="Plan Your Trip">
+
+        <div>
+          <label for="fullName">Full Name</label>
+          <input id="fullName" type="text" name="full_name" required placeholder="John Doe" />
+        </div>
+
+        <div>
+          <label for="email">Email Address</label>
+          <input id="email" type="email" name="email" required placeholder="email@example.com" />
+        </div>
+
+        <div>
+          <label for="phone">Phone / WhatsApp</label>
+          <input id="phone" type="tel" name="phone" placeholder="+254..." />
+        </div>
+
+        <div>
+          <label for="travelDate">Preferred Travel Date</label>
+          <input type="date" id="travelDate" name="travelDate" required />
+        </div>
+        <div>
+          <label for="travelers">Number of Travelers</label>
+          <input id="travelers" type="number" name="travelers" min="1" required />
+        </div>
+
+        <div>
+          <label for="budget">Budget Range (Per Person)</label>
+          <select id="budget" name="budget">
+            <option value="">Select Budget</option>
+            <option>Budget</option>
+            <option>Mid-range</option>
+            <option>Luxury</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="destinations">Destinations of Interest</label>
+          <select id="destinations" name="destinations">
+            <option>Maasai Mara</option>
+            <option>Amboseli</option>
+            <option>Lake Nakuru</option>
+            <option>Tsavo</option>
+            <option>Multiple Destinations</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="interests">Safari Interests</label>
+          <select id="interests" name="interests">
+            <option>Wildlife & Big Five</option>
+            <option>Great Migration</option>
+            <option>Photography</option>
+            <option>Culture & Community</option>
+            <option>Family Safari</option>
+          </select>
+        </div>
+
+        <div class="full">
+          <label for="message">Tell Us More About Your Dream Safari</label>
+          <textarea id="message" name="message" placeholder="Special requests, accommodation preferences, celebrations, or anything else..."></textarea>
+        </div>
+
+        <div class="full button-wrapper">
+          <button type="submit">Get My Custom Safari Plan</button>
+        </div>
+      </form>
+
+      <p class="note">No obligation • Free planning • Expert local advice</p>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2026 <span>Kenya Safari Tours</span>. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
