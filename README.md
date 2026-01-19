@@ -1,2 +1,2 @@
-# Kenya-safari-Tours
+# Kenya-Safari-Tours
 A Travels company website
